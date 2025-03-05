@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+
+    nav ul li {
+        list-style-type: none;
+    }
+
+    nav ul li:hover {
+        background-color: rgb(97, 97, 185);
+    }
+
+    main {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    main div {
+        max-width: 450px;
+        margin: 10px 0px;
+    }
+
+    img {
+        width: 430px;
+        height: 215px;
+    }
+
+    figcaption {
+        font-size: 14px;
+        color: gray;
+    }
+
+    main h3 {
+        text-transform: capitalize;
+        font-size: larger;
+    }
+
+    main p {
+        font-size: medium;
+        color: #272727;
+    }
+
+    .lastlinks {
+        display: flex;
+        gap: 10px;
+        text-align: left;
+        justify-content: end;
+    }
+
+    .lastlinks p {
+        padding: 10px;
+        color: #7272b1;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+
+    nav ul li {
+        list-style-type: none;
+    }
+
+    nav ul li:hover {
+        background-color: rgb(97, 97, 185);
+    }
+
+    main {
+        margin-top: 20px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 10px;
+        max-width: 700px;
+    }
+
+
+    main div {
+        background-color: lightblue;
+        padding: 20px;
+        text-align: center;
+    }
+
+    img {
+        width: 250px;
+        height: 125px;
+    }
+
+    figcaption {
+        font-size: 14px;
+        color: gray;
+    }
+
+    main h3 {
+        text-transform: capitalize;
+        font-size: larger;
+    }
+
+    main p {
+        font-size: medium;
+        color: #272727;
+    }
+
+    .lastlinks {
+        display: flex;
+        gap: 10px;
+        text-align: left;
+        justify-content: end;
+    }
+
+    .lastlinks p {
+        padding: 10px;
+        color: #7272b1;
+    }
+}
+/* Desktop */
+@media (min-width: 769px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+
+    nav ul li {
+        list-style-type: none;
+    }
+
+    nav ul li:hover {
+        background-color: rgb(97, 97, 185);
+    }
+
+    main {
+        margin-top: 20px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;  /* 2 columns */
+        grid-template-rows: auto auto auto auto; /* 4 rows */
+        gap: 10px;
+        justify-content: center;
+    }
+
+    main div {
+        background-color: lightblue;
+        margin: 10px;
+        padding: 20px;
+        text-align: center;
+        width: 100%; /* Make divs fit within grid columns */
+        box-sizing: border-box; /* Ensures padding doesn't break width */
+    }
+
+    img {
+        width: 250px;
+        height: 125px;
+    }
+
+    figcaption {
+        font-size: 14px;
+        color: gray;
+    }
+
+    main h3 {
+        text-transform: capitalize;
+        font-size: larger;
+    }
+
+    main p {
+        font-size: medium;
+        color: #272727;
+    }
+
+    .lastlinks {
+        display: flex;
+        gap: 10px;
+        text-align: left;
+        justify-content: end;
+    }
+
+    .lastlinks p {
+        padding: 10px;
+        color: #7272b1;
+    }
+}
